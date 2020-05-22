@@ -3,19 +3,22 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.howtodoinjava.demo</groupId>
+    <artifactId>spring-boot-data-jpa</artifactId>
+    <packaging>jar</packaging>
+    <name>Spring Boot Spring Data JPA</name>
+    <version>1.0</version>
+	<!--  <groupId>com.howtodoinjava.demo</groupId>
 	<artifactId>springbootdemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
 	<name>SpringBootDemo</name>
 	<description>Spring Boot Demo for http://howtodoinjava.com</description>
-
+    -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.3.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+	 <!-- lookup parent from repository -->
 	</parent> 
 
 	<properties>
