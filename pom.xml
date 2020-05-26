@@ -7,36 +7,35 @@
     <packaging>jar</packaging>
     <name>Spring Boot Spring Data JPA</name>
     <version>1.0</version>
-	<!--  <groupId>com.howtodoinjava.demo</groupId>
-	<artifactId>springbootdemo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-	<name>SpringBootDemo</name>
-	<description>Spring Boot Demo for http://howtodoinjava.com</description>
-    -->
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.3.RELEASE</version>
-	 <!-- lookup parent from repository -->
+
 	</parent> 
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<downloadSources>true</downloadSources>
+        <downloadJavadocs>true</downloadJavadocs>
 	</properties>
 
 	<dependencies>
+	
 	<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-hateoas</artifactId>
@@ -72,6 +71,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+            </plugin>
 		</plugins>
 	</build>
 

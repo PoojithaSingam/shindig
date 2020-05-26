@@ -7,5 +7,6 @@ import com.howtodoinjava.demo.model.User;
 
 @Repository
 public interface UserRepo extends CrudRepository<User, Integer> {
-
+      
+	//public List<User> findAllUsers()
 }

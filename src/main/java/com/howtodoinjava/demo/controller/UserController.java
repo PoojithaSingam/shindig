@@ -15,7 +15,6 @@ import service.UserService;
 @RestController
 public class UserController {
 	
-	//private UserRepo repo;
 	@Autowired
 	private UserService service;
 	
@@ -23,7 +22,7 @@ public class UserController {
     public List<User> getUsers() 
     {
 		List<User> userList = new ArrayList<User>();
-		userList.add(new User());
+		//userList.add(new User());
 		return userList;
     }
 
